@@ -85,10 +85,12 @@ form {
 
 input {
   display: block;
-  margin: 1rem auto;
+  margin: 0.75rem auto;
   border-radius: 5px;
   font-size: 1.25rem;
   text-align: center;
+  padding: 0.2rem 0.1rem;
+  border: 3px solid black;
 }
 
 button {
@@ -107,12 +109,17 @@ button:hover {
   opacity: 0.5;
 }
 
+#boxModButtons {
+  margin-bottom: 0.5rem;
+}
+
 #calculateButton {
   font-family: 'Metro';
+  margin-bottom: 2rem;
 }
 
 #resultDisplay {
   font-family: sans-serif;
   font-size: 1.8rem;
-  margin: 1rem;
+  margin: 0.75rem 0.5rem 1.75rem;
 }

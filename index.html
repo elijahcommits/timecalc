@@ -15,8 +15,10 @@
     <input type="text" class="userInput" maxlength="10">
   </form>
   <h3 class="resultDisplay" id="resultDisplay"></h3>
-  <button onclick="removeInputField()">−box</button>
-  <button onclick="addInputField()">+box</button>
+  <div id="boxModButtons">
+    <button onclick="removeInputField()">−box</button>
+    <button onclick="addInputField()">+box</button>
+  </div>
   <button onclick="addNumbers()" id="calculateButton">CALCULATE</button>
 
   <script src="main.js"></script>
