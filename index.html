@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Time Calculator</title>
+  <title>Calc-You-Later! Time Calculator</title>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <h1 class="title" id="title">Time Calculator</h1>
-  <h2 class="subtitle" id="subtitle">Enter time in H:MM format</h2>
+  <h1 class="title" id="title">Calc-You-Later!</h1>
+  <h2 class="subtitle" id="subtitle">Enter time in HH:MM format</h2>
   <form id="form" action="">
     <input type="text" class="userInput" maxlength="10">
     <input type="text" class="userInput" maxlength="10">
   </form>
   <h3 class="resultDisplay" id="resultDisplay"></h3>
-  <button onclick="removeInputField()">-box</button>
+  <button onclick="removeInputField()">−box</button>
   <button onclick="addInputField()">+box</button>
-  <button onclick="addNumbers()">Calculate</button>
+  <button onclick="addNumbers()" id="calculateButton">CALCULATE</button>
 
   <script src="main.js"></script>
 </body>
