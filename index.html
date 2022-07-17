@@ -7,21 +7,39 @@
   <title>Calc-You-Later! − Time Calculator</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
-  <h1 class="title" id="title">Calc-You-Later!</h1>
-  <h2 class="subtitle" id="subtitle">Enter time in HH:MM format</h2>
-  <form id="form" action="">
-    <input type="text" class="userInput" maxlength="10" placeholder="7:10">
-    <input type="text" class="userInput" maxlength="10">
-  </form>
-  <h3 class="resultDisplay" id="resultDisplay"></h3>
-  <div id="boxModButtons">
-    <button onclick="removeInputField()">−box</button>
-    <button onclick="addInputField()">+box</button>
-  </div>
-  <button onclick="addNumbers()" id="calculateButton">CALCULATE</button>
 
-  <script src="main.js"></script>
+  <main>
+    <header class="header" id="header">
+      <h1 class="title" id="title">Calc-You-Later!</h1>
+      <h2 class="subtitle" id="subtitle">Enter time in HH:MM format</h2>
+      <div class="headerSubtext" id="headerSubtext">
+        <p>Entries will be added together and returned as a decimal</p>
+        <p>(i.e. 6:30 = 6.50 hours)</p>
+      </div>
+    </header>
+
+    <section class="calculator" id="calculator">
+      <div class="wrapper" id="calcWrapper">
+        <form id="form" action="">
+          <input type="text" class="userInput" maxlength="10" placeholder="7:10">
+          <input type="text" class="userInput" maxlength="10">
+          <input type="text" class="userInput" maxlength="10">
+          <input type="text" class="userInput" maxlength="10">
+          <input type="text" class="userInput" maxlength="10">
+        </form>
+        <h3 class="resultDisplay" id="resultDisplay"></h3>
+        <div id="boxModButtons">
+          <button onclick="removeInputField()">−box</button>
+          <button onclick="addInputField()">+box</button>
+        </div>
+        <button onclick="addNumbers()" id="calculateButton">CALCULATE</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- <script src="main.js"></script> -->
 </body>
 </html>

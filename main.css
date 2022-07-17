@@ -67,6 +67,22 @@ body {
   background-color: azure;
 }
 
+main {
+  /* display: flex;
+  flex-direction: column; */
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+#calculator {
+  padding: clamp(0.5rem, 1rem, 2rem);
+  /* background-color: red; */
+}
+
+#calcWrapper {
+  margin-bottom: 2rem;
+}
+
 .title {
   font-family: 'Metro';
   color: hsl(180, 100%, 6%);
@@ -75,8 +91,12 @@ body {
 }
 
 .subtitle {
+  font-weight: bold;
   color: hsl(180, 100%, 18%);
-  margin-bottom: 1.5rem;
+}
+
+.headerSubtext {
+  font-weight: 600;
 }
 
 form {
@@ -115,7 +135,6 @@ button:hover {
 
 #calculateButton {
   font-family: 'Metro';
-  margin-bottom: 2rem;
 }
 
 #resultDisplay {
